@@ -79,3 +79,24 @@ header .header-text {
     width: 100%;
     background-size: cover;
 }
+
+
+/*
+    Wappa Section
+*/
+#services {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 600px;
+    padding-top: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.icon-holder {
+    text-align: center;
+}
+
+.table>tbody>tr>td {
+    border-color: #000000;
+}
