@@ -1,9 +1,14 @@
+/*
+    Cream Yellow color: #efecbf;
+*/
+
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     overflow-x: hidden;
     color: #2a3237;
-    background: url('../img/background/ricepaper_v3.jpg');
+    background: url('../img/background/ricepaper_v3_dark.jpg');
     /*
     background-color: rgba(211, 176, 65, 1);
     */
@@ -11,8 +16,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*
 .navbar {
-    background-color: #efecbf;
+    background-color: rgba(239, 236, 191, 0.7);
     margin-bottom: 0;
 }
 
@@ -24,6 +30,27 @@ body {
     padding: 3px;
     display: inline;
 }
+*/
+
+.logo {
+    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
+    /*    margin-left: 20px;
+        margin-right: 10px;*/
+}
+
+/*.logo {
+    background: url("../img/logo_100x200.png");
+    width: 100px;
+    height: 200px;
+    top: 90px;
+    margin-left: -50px;
+    position: absolute;
+    z-index: 99;
+    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
+    /!*    margin-left: 20px;
+        margin-right: 10px;*!/
+}*/
+
 
 header {
     position: relative;
@@ -47,12 +74,37 @@ header .header-text {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: #010101;
+    color: #ffffff;
+
 }
+
+.rest-name {
+    font-size: 60px;
+}
+
+.rest-name-2nd {
+    font-size: 26px;
+}
+
+.character {
+    background: url("../img/icons/musashi_character.gif");
+    width: 120px;
+    height: 143px;
+    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
+    /*    margin-left: 20px;
+        margin-right: 10px;*/
+}
+
+/*
+    Panes
+*/
 
 .intro-table {
     min-height: 300px;
-    background-color: rgba(0, 0, 0, 0.8);
+    /*
+    background: url('../img/background/higakiRed.jpg');
+    */
+    background-color: #480e0d;
     padding: 10px 10px 10px 10px;
 }
 
@@ -62,8 +114,8 @@ header .header-text {
 }
 
 .menu-pane {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 30px;
+    position: relative;
 }
 
 #map {
@@ -78,12 +130,12 @@ header .header-text {
 
 .btn-looks{
     background-color: transparent;
-    border-color: gold;
+    border-color: #73a73b;
     border-width: thin;
     color: #ffffff;
 }
 .btn-looks:hover{
-    background-color: rgba(255, 215, 0, 0.55);
+    background-color: rgba(115, 167, 59, 0.9);
     color: #ffffff;
     transition: all 300ms ease;
 }
@@ -132,7 +184,6 @@ header .header-text {
 
 
 #weekly {
-    background: url('../img/background/ricepaper_v3.jpg');
     padding-top: 10px;
     padding-bottom: 100px;
 }
@@ -187,4 +238,11 @@ header .header-text {
     .text-center-mobile {
         text-align: center !important;
     }
+    .logo {
+        top: 45px;
+    }
+    .rest-name {
+        font-size: 50px;
+    }
+
 }

@@ -8,40 +8,41 @@
         <link rel="stylesheet" href="stylesheet/main.css">
     </head>
     <body>
-    <nav class="navbar">
+    <nav>
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <ul class="nav navbar-nav navbar-right main-nav">
-                    <li>
-                        <a class="navbar-brand" href="#">
-                            <img src="img/logo.gif" data-active-url="img/logo-active.png" style="width: 40px; height: 60px;margin-right: 0;" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <h2>MUSASHI</h2>
-                    </li>
-                </ul>
-
+            <div class="row">
+                <div class="col-md-12 text-center">
+<!--
+                    <a class="logo" href="http://soichirohirata.com/resttemp/index.html"></a>
+-->
+                </div>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right main-nav">
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--<div class="navbar-header">
+            &lt;!&ndash;<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>&ndash;&gt;
+        </div>
+        &lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right main-nav">
+                <li>
+                    <div class="text-center">
+                        <h2>MUSASHI</h2>
+                    </div>
+                </li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
+            </ul>
+        </div>-->
+        <!-- /.navbar-collapse -->
         <!-- /.container-fluid -->
     </nav>
     <header id="intro">
@@ -50,8 +51,16 @@
                 <div class="header-text">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h3>Musashi</h3>
-                            <h1>Authentic Japanese Cuisine</h1>
+                            <a href="http://soichirohirata.com/resttemp/index.html">
+                                <img src="http://soichirohirata.com/resttemp/img/logo_100x200.png" class="logo">
+                            </a>
+                            <h1 class="rest-name">MUSASHI</h1>
+                            <h1 class="rest-name-2nd">Authentic Japanese Cuisine</h1>
+                            <h2>Since 1979</h2>
+                            <img src="http://soichirohirata.com/resttemp/img/icons/musashi_character.gif">
+<!--
+                            <img src="http://soichirohirata.com/resttemp/img/icons/since150.png">
+-->
                         </div>
                     </div>
                 </div>
@@ -61,7 +70,7 @@
     <section id="menu">
         <div class="container">
             <div class="row intro-tables" style="color: #fff;">
-                <div class="col-xs-4 menu-pane">
+                <div class="col-md-4 menu-pane">
                     <div class="row">
                         <div class="col-sm-12 lunchBackground"></div>
                     </div>
@@ -87,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 menu-pane">
+                <div class="col-md-4 menu-pane">
                     <div class="row">
                         <div class="col-sm-12 dinnerBackground"></div>
                     </div>
@@ -121,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4 menu-pane">
+                <div class="col-md-4 menu-pane">
                     <div class="row">
                         <div class="col-sm-12 sushiBackground"></div>
                     </div>
@@ -170,8 +179,14 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-12">
-                    <img src="../RestaurantM/img/special_061416.gif" class="image-shadow">
+                <div class="col-md-3 col-centered">
+                    <br>
+                </div>
+                <div class="col-md-6 col-centered">
+                    <img src="http://soichirohirata.com/resttemp/img/special_061416.gif" class="image-shadow" style="width: 100%;">
+                </div>
+                <div class="col-md-3 col-centered">
+                    <br>
                 </div>
             </div>
         </div>
@@ -179,7 +194,7 @@
     <section id="services" class="section section-padded">
         <div class="container">
             <div class="row text-center title">
-                <h2>Wappa Meshi</h2>
+                <h2>WAPPA MESHI</h2>
                 <h4 class="light muted">Wappa dinner is available everyday now</h4>
             </div>
             <div class="row services">
@@ -251,7 +266,7 @@
     <section id="happyHour" class="section gray-bg">
         <div class="container">
             <div class="row title text-center">
-                <h2 class="margin-top">Happy Hour</h2>
+                <h2 class="margin-top">HAPPY HOUR</h2>
                 <h4 class="light muted">Tue - Fri</h4>
                 <h4 class="light muted">5:30 - 7:00p.m.</h4>
             </div>
@@ -468,7 +483,7 @@
                     <h5 class="light regular light-white">F 510. 843. 2100</h5>
                     <h5 class="light regular light-white">(SUNDAY pick up 9:00 am - 12:00 Noon)</h5>
                     <h5 class="light regular light-white">Master Card • Visa • American Express • Discover accepted</h5>
-                    <a href="https://www.facebook.com/Musashiya.berkeley/?fref=ts" target="_blank"><img src="../RestaurantM/img/icons/glyphicons-social-31-facebook.png"></a>
+                    <a href="https://www.facebook.com/Musashiya.berkeley/?fref=ts" target="_blank" style="cursor: pointer;"><img src="http://soichirohirata.com/resttemp/img/icons/glyphicons-social-31-facebook.png"></a>
                 </div>
                 <div class="col-sm-6 text-center-mobile">
                     <h3 class="white">Opening Hours <span class="open-blink"></span></h3>
