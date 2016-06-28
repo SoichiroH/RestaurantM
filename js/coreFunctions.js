@@ -11,11 +11,11 @@ $(window).load(function(){
 
 //Header
     //Header initial height
-    $('header').height($(window).height() + 80);
+    $('header').height($(window).height() * 0.8);
 
     // Window resize height
     $(window).resize(function() {
-        $('header').height($(window).height());
+        $('header').height($(window).height()* 0.8);
     });
 
     var map;
@@ -33,7 +33,6 @@ $(window).load(function(){
         });
     }
     initMap();
-
 
 });
 
