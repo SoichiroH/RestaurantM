@@ -1,10 +1,12 @@
 /*
     Cream Yellow color: #efecbf;
 */
-
+@font-face {
+    font-family: Avenir-Book;
+    src: url(../fonts/Avenir-Book.ttf); }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Avenir-Book, Helvetica, Arial, sans-serif;
     font-size: 14px;
     overflow-x: hidden;
     color: #2a3237;
@@ -16,41 +18,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*
-.navbar {
-    background-color: rgba(239, 236, 191, 0.7);
-    margin-bottom: 0;
+.dark-text {
+    color: #000;
 }
 
-.navbar-header {
-    min-height: 70px;
+.align-right {
+    text-align: right;
 }
-
-.navbar-brand {
-    padding: 3px;
-    display: inline;
-}
-*/
 
 .logo {
     box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
     /*    margin-left: 20px;
         margin-right: 10px;*/
 }
-
-/*.logo {
-    background: url("../img/logo_100x200.png");
-    width: 100px;
-    height: 200px;
-    top: 90px;
-    margin-left: -50px;
-    position: absolute;
-    z-index: 99;
-    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
-    /!*    margin-left: 20px;
-        margin-right: 10px;*!/
-}*/
-
 
 header {
     position: relative;
@@ -75,11 +55,10 @@ header .header-text {
     text-align: center;
     vertical-align: middle;
     color: #ffffff;
-
 }
 
 .rest-name {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .rest-name-2nd {
@@ -95,6 +74,16 @@ header .header-text {
         margin-right: 10px;*/
 }
 
+#scrollDownIcon {
+    cursor: pointer;
+}
+
+#scrollDownIcon :hover{
+
+}
+
+
+
 /*
     Panes
 */
@@ -106,11 +95,11 @@ header .header-text {
     */
     background-color: #480e0d;
     padding: 10px 10px 10px 10px;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.25), 0 11px 12px rgba(0,0,0,0.50);
 }
 
 #menu {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .menu-pane {
@@ -120,7 +109,7 @@ header .header-text {
 
 #map {
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 /*buttons*/
@@ -178,17 +167,10 @@ header .header-text {
     padding-bottom: 20px;
 }
 
-.menu-button {
-
-}
-
-
 #weekly {
     padding-top: 10px;
     padding-bottom: 100px;
 }
-
-
 
 /*
     Wappa Section
@@ -206,14 +188,14 @@ header .header-text {
     text-align: center;
 }
 
+.wappa-table {
+    padding: 20px;
+    position: relative;
+}
+
 .table>tbody>tr>td {
     border: none;
 }
-
-.align-right {
-    text-align: right;
-}
-
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
     background-color: #626262;
@@ -221,9 +203,17 @@ header .header-text {
 
 #happyHour {
     min-height: 600px;
-    background-color: rgba(134, 94, 40, 0.6);
     color: #ffffff;
 }
+
+.hhTable {
+    background-color: #480e0d;
+    padding: 10px;
+    position: relative;
+    min-height: 340px;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.25), 0 11px 12px rgba(0,0,0,0.50);
+}
+
 
 .menu-font-size {
     font-size: 17px;

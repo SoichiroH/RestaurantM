@@ -11,12 +11,19 @@ $(window).load(function(){
 
 //Header
     //Header initial height
-    $('header').height($(window).height() * 0.8);
+    $('header').height($(window).height() * 0.84);
 
     // Window resize height
     $(window).resize(function() {
-        $('header').height($(window).height()* 0.8);
+        $('header').height($(window).height()* 0.84);
     });
+
+    //Scroll Down
+    $('#scrollDownIcon').on('click', function(){
+        var windowHeight = $(window).height();
+        $('body').not(':animated').animate({scrollTop: windowHeight}, 'slow');
+    });
+
 
     var map;
     function initMap() {
