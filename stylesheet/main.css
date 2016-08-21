@@ -37,7 +37,7 @@ header {
     width: 100%;
     color: white;
     background: rgba(28, 36, 65, 0.93);
-    background: url('../img/header.jpg');
+
     background-size: cover;
 }
 
@@ -129,6 +129,12 @@ header .header-text {
     transition: all 300ms ease;
 }
 
+.btn-align {
+    position: relative;
+    display: table;
+    text-align: center;
+}
+
 .btn-container {
     display: table-cell;
     vertical-align: bottom;
@@ -175,13 +181,17 @@ header .header-text {
 /*
     Wappa Section
 */
-#services {
+#wappaSection {
     background-color: rgba(0,0,0,0.8);
     color: #ffffff;
     min-height: 600px;
     padding-top: 15px;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+#wappaImages {
+    min-height: 350px;
 }
 
 .icon-holder {
@@ -268,29 +278,42 @@ header .header-text {
     -o-transform: translate(0);
     transform: translate(0); }
 
-@keyframes comingDown {
-    0% {
-        -webkit-transform: translate(0, -15px);
-        -moz-transform: translate(0, -15px);
-        -ms-transform: translate(0, -15px);
-        -o-transform: translate(0, -15px);
-        transform: translate(0, -15px); }
-    100% {
-        -webkit-transform: translate(0, 0);
-        -moz-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0); } }
-
-.comingDownLoop {
-    -webkit-animation: comingDown 1s infinite;
-    -o-animation: comingDown 1s infinite;
-    animation: comingDown 1s infinite;
+.comingDown4s {
+    -webkit-animation: comingDown 4s;
+    -o-animation: comingDown 4s;
+    animation: comingDown 4s;
     -webkit-transform: translate(0);
     -moz-transform: translate(0);
     -ms-transform: translate(0);
     -o-transform: translate(0);
     transform: translate(0); }
+
+.comingDown5s {
+    -webkit-animation: comingDown 5s;
+    -o-animation: comingDown 5s;
+    animation: comingDown 5s;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0); }
+
+@keyframes comingDown {
+    0% {
+        -webkit-transform: translate(0, -60px);
+        -moz-transform: translate(0, -60px);
+        -ms-transform: translate(0, -60px);
+        -o-transform: translate(0, -60px);
+        transform: translate(0, -60px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
 
 .comingDownLoop {
     -webkit-animation: comingDown 1s infinite;
