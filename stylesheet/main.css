@@ -172,7 +172,7 @@ footer {
 
 #weekly {
     padding-bottom: 100px;
-    background: url('../img/background/ricepaper_v3_dark.jpg');
+    background: url('../img/background/arches.png');
 }
 
 .parallaxWeekly {
@@ -183,12 +183,8 @@ footer {
     background-size: cover;
 }
 
-#weeklyContainer {
-    background: url('../img/background/ricepaper_v3_dark.jpg');
-}
-
 .image-shadow {
-    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
+    box-shadow: 10px 10px 17px rgba(0,0,0,0.12), 10px 15px 16px rgba(0,0,0,0.24);
 }
 
 /*
