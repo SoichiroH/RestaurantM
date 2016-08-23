@@ -1,43 +1,27 @@
-/*
-    Cream Yellow color: #efecbf;
-*/
 @font-face {
     font-family: Avenir-Book;
-    src: url(../fonts/Avenir-Book.ttf); }
+    src: url(../fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+    font-family: Magnolia;
+    src: url(../fonts/Magnolia.ttf);
+}
 
 body {
     font-family: Avenir-Book, Helvetica, Arial, sans-serif;
     font-size: 14px;
     overflow-x: hidden;
     color: #2a3237;
-    background: url('../img/background/ricepaper_v3_dark.jpg');
-    /*
-    background-color: rgba(211, 176, 65, 1);
-    */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.dark-text {
-    color: #000;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.logo {
-    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
-    /*    margin-left: 20px;
-        margin-right: 10px;*/
 }
 
 header {
     position: relative;
     width: 100%;
     color: white;
-    background: rgba(28, 36, 65, 0.93);
-
+    background-attachment: fixed;;
     background-size: cover;
 }
 
@@ -57,49 +41,53 @@ header .header-text {
     color: #ffffff;
 }
 
-.rest-name {
-    font-size: 40px;
+.table>tbody>tr>td {
+    border: none;
 }
 
-.rest-name-2nd {
-    font-size: 26px;
-}
-
-.character {
-    background: url("../img/icons/musashi_character.gif");
-    width: 120px;
-    height: 143px;
-    box-shadow: 0 15px 17px rgba(0,0,0,0.25), 0 15px 16px rgba(0,0,0,0.50);
-    /*    margin-left: 20px;
-        margin-right: 10px;*/
-}
-
-#scrollDownIcon {
-    cursor: pointer;
-}
-
-#scrollDownIcon :hover{
-
+footer {
+    background: url('../img/background/ricepaper_v3_dark.jpg');
 }
 
 
 
 /*
-    Panes
+    Banner ---------------------------------------------------------------------------
 */
 
-.intro-table {
-    min-height: 300px;
-    /*
-    background: url('../img/background/higakiRed.jpg');
-    */
-    background-color: #480e0d;
-    padding: 10px 10px 10px 10px;
-    box-shadow: 0 10px 12px rgba(0,0,0,0.25), 0 11px 12px rgba(0,0,0,0.50);
+.rest-name {
+    font-size: 60px;
 }
 
+.rest-name-2nd {
+    font-family: Magnolia;
+    font-size: 30px;
+    font-style: italic;
+}
+
+@media(max-width:800px) {
+    .text-center-mobile {
+        text-align: center !important;
+    }
+    .rest-name {
+        font-size: 50px;
+    }
+}
+
+/*
+    Menu ---------------------------------------------------------------------------
+*/
+
 #menu {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url('../img/background/ricepaper_v3_dark.jpg');
+}
+
+.menu-title {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu-pane {
@@ -107,41 +95,17 @@ header .header-text {
     position: relative;
 }
 
-#map {
-    width: 100%;
-    height: 300px;
+.intro-table {
+    min-height: 300px;
+    color: #fff;
+    background-color: #480e0d;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.25), 0 11px 12px rgba(0,0,0,0.50);
 }
 
-/*buttons*/
-* {
-    border-radius: 0 !important;
-}
-
-.btn-looks{
-    background-color: transparent;
-    border-color: #73a73b;
-    border-width: thin;
-    color: #ffffff;
-}
-.btn-looks:hover{
-    background-color: rgba(115, 167, 59, 0.9);
-    color: #ffffff;
-    transition: all 300ms ease;
-}
-
-.btn-align {
-    position: relative;
-    display: table;
-    text-align: center;
-}
-
-.btn-container {
-    display: table-cell;
-    vertical-align: bottom;
-    bottom: 10px;
-    padding-bottom: 20px;
-}
-
+/*
+    Menu Background Images
+*/
 
 .lunchBackground {
     background: url('../img/tenpura.jpg');
@@ -167,34 +131,92 @@ header .header-text {
     min-height: 300px;
 }
 
-.menu-title {
-    font-size: 30px;
-    padding-top: 20px;
+/*
+    Menu Buttons
+*/
+
+* {
+    border-radius: 0 !important;
+}
+
+.btn-align {
+    position: relative;
+    display: table;
+    text-align: center;
+}
+
+.btn-container {
+    display: table-cell;
+    vertical-align: bottom;
+    bottom: 10px;
     padding-bottom: 20px;
 }
 
+.btn-looks{
+    background-color: transparent;
+    border-color: #73a73b;
+    border-width: thin;
+    color: #ffffff;
+}
+
+.btn-looks:hover{
+    background-color: rgba(115, 167, 59, 0.9);
+    color: #ffffff;
+    transition: all 300ms ease;
+}
+
+
+/*
+    WeeklySpecial ---------------------------------------------------------------------------
+*/
+
 #weekly {
-    padding-top: 10px;
     padding-bottom: 100px;
+    background: url('../img/background/ricepaper_v3_dark.jpg');
+}
+
+.parallaxWeekly {
+    min-height: 525px;
+    background: url('../img/exterior.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#weeklyContainer {
+    background: url('../img/background/ricepaper_v3_dark.jpg');
+}
+
+.image-shadow {
+    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
 }
 
 /*
-    Wappa Section
+    Wappa ---------------------------------------------------------------------------
 */
-#wappaSection {
+
+#wappa {
     background-color: rgba(0,0,0,0.8);
     color: #ffffff;
     min-height: 600px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-bottom: 50px;
+}
+
+.parallaxWappa {
+    min-height: 525px;
+    background: url('../img/wappa4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wappaContainer {
+    background-color: rgba(0,0,0,0);
 }
 
 #wappaImages {
     min-height: 350px;
-}
-
-.icon-holder {
+    width: 90%;
     text-align: center;
 }
 
@@ -203,17 +225,38 @@ header .header-text {
     position: relative;
 }
 
-.table>tbody>tr>td {
-    border: none;
+.menu-font-size {
+    font-size: 17px;
 }
 
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #626262;
-}
+/*
+    Happy hour ---------------------------------------------------------------------------
+*/
 
 #happyHour {
+    background: url('../img/background/ricepaper_v3_dark.jpg');
     min-height: 600px;
     color: #ffffff;
+}
+
+.parallaxHappy {
+    min-height: 525px;
+    background: url('../img/sake.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dark-text {
+    color: #000;
+}
+
+.happy-pane {
+    padding-bottom: 30px
+}
+
+.align-right {
+    text-align: right;
 }
 
 .hhTable {
@@ -224,29 +267,18 @@ header .header-text {
     box-shadow: 0 10px 12px rgba(0,0,0,0.25), 0 11px 12px rgba(0,0,0,0.50);
 }
 
+/*
+    Map ---------------------------------------------------------------------------
+*/
 
-.menu-font-size {
-    font-size: 17px;
+#map {
+    width: 100%;
+    height: 300px;
 }
 
-
-.image-shadow {
-    box-shadow: 0 5px 7px rgba(0,0,0,0.12), 0 5px 6px rgba(0,0,0,0.24);
-}
-
-@media(max-width:991px) {
-    .text-center-mobile {
-        text-align: center !important;
-    }
-    .logo {
-        top: 45px;
-    }
-    .rest-name {
-        font-size: 50px;
-    }
-
-}
-
+/*
+    Animations ---------------------------------------------------------------------------
+*/
 
 .comingDown1s {
     -webkit-animation: comingDown 1s;

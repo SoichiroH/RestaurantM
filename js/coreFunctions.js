@@ -1,19 +1,20 @@
 /**
- * Created by Soichiro on 6/11/2016.
+ * Created by Soichiro
  */
 
 $(window).load(function(){
-/*    if ($(window).height() > $(window).width()) {
-        var ratio = $('.parallax').width() / $('.parallax').height();
-        $('.parallax img').css('height', ($(window).height()) + 'px');
-        $('.parallax img').css('width', $('.parallax').height() * ratio + 'px');
-    }*/
+// Mobile optimization for parallax
+    if(window.innerWidth < 800) {
+        $('.logo').css({'height':'150px'});
+        $('.character').css({'height':'100px'});
+        $('.parallaxWeekly').css({'background-attachment':'scroll'});
+        $('.parallaxWappa').css({'background-attachment':'scroll'});
+        $('.parallaxHappy').css({'background-attachment':'scroll'});
+    }
 
 //Header
-    //Header initial height
     $('header').height($(window).height() * 0.84);
 
-    // Window resize height
     $(window).resize(function() {
         $('header').height($(window).height()* 0.84);
     });
@@ -32,12 +33,7 @@ $(window).load(function(){
     });
 
 
-//Menu Section
-
-/*
-    $('#menuBoxContainer').addClass('hidden');
-*/
-
+//Menu
     $(window).scroll(function(){
         var windowHeight = $(window).height(),
             windowScrollTop = $(this).scrollTop(),
@@ -47,15 +43,13 @@ $(window).load(function(){
             weeklyEventPoint = menuEventPoint + menuBoxHeight,
             weeklyHeight = $('#weekly').outerHeight(),
             wappaEventPoint = weeklyEventPoint + weeklyHeight,
-            wappaHeight = $('#wappaSection').outerHeight(),
+            wappaHeight = $('#wappa').outerHeight(),
             happyEventPoint = wappaEventPoint + wappaHeight;
-
 
         var menuPanes = $('#menuBoxContainer').find('.menu-pane'),
             weeklyPanes = $('#weekly').find('.weekly-pane'),
-            wappaPanes = $('#wappaSection').find('.wappa-pane'),
+            wappaPanes = $('#wappa').find('.wappa-pane'),
             happyPanes = $('#happyHour').find('.happy-pane');
-
 
         if (windowScrollTop > menuEventPoint){
             var x=1;
@@ -87,7 +81,6 @@ $(window).load(function(){
         }
     });
 
-
 //Wappa
     $('#wappaImages').backstretch([
         "img/wappa2.jpg",
@@ -99,7 +92,6 @@ $(window).load(function(){
         fade: 1000,
         duration: 2000
     });
-
 
 //Map
     var map;
@@ -117,6 +109,8 @@ $(window).load(function(){
         });
     }
     initMap();
+
+
 
 });
 
